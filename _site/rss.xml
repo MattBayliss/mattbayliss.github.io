@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Feed Name</title>
+    <link>http://domain/</link>
+    <atom:link href="http://domain/rss.xml" rel="self" type="application/rss+xml" />
+    <description></description>
+    <language>en-au</language>
+    <pubDate>Thu, 20 Nov 2014 10:59:11 %z</pubDate>
+    <lastBuildDate>Thu, 20 Nov 2014 10:59:11 %z</lastBuildDate>
+
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://domain/2014/11/19/myfirstpost.html</link>
+      <pubDate>Wed, 19 Nov 2014 00:00:00 %z</pubDate>
+      <author>Author</author>
+      <guid>http://domain/2014/11/19/myfirstpost.html</guid>
+      <description>&lt;h2&gt;Hello world...&lt;/h2&gt;
+&lt;p&gt;This is my first post on the site!&lt;/p&gt;
+</description>
+    </item>
+    
+
+  </channel> 
+</rss>
