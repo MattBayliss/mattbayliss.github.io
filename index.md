@@ -1,6 +1,6 @@
 ---
 layout : layout
-title : SiteName
+title : mattbayliss
 ---
 
 <ul class="posts">
