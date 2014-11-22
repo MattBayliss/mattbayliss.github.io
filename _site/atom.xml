@@ -3,7 +3,7 @@
   <title>Feed Name</title>
   <link href="http://domain/"/>
   <link type="application/atom+xml" rel="self" href="http://domain/atom.xml"/>
-  <updated>2014-11-20T10:59:11.0503619+11:00</updated>
+  <updated>2014-11-22T22:48:03+11:00</updated>
   <id>http://domain/</id>
   <author>
     <name>Author</name>
@@ -20,7 +20,8 @@
       <name>Author</name>
       <uri>http://domain/</uri>
     </author>
-    <content type="html">&lt;h2&gt;Hello world...&lt;/h2&gt;
+    <content type="html">&lt;h2 id=&quot;hello-world&quot;&gt;Hello world…&lt;/h2&gt;
+
 &lt;p&gt;This is my first post on the site!&lt;/p&gt;
 </content>
   </entry>
