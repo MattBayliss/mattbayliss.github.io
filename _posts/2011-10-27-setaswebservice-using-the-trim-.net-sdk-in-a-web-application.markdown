@@ -6,7 +6,7 @@ categories: trimsdk
 excerpt_separator: <!--more-->
 ---
 
-If you've  been dabbling in the TRIM 7 .Net SDK, particular as part of a web application you have to set TRIM to run in WebService (or Service) mode. This prevents any user interface shenanigans such as trying to display error windows on the server, and the storage of all TRIM users' caches in the one location, and other general server-mode goodness.
+If you've  been dabbling in the TRIM 7 .Net SDK, particularly as part of a web application you have to set TRIM to run in WebService (or Service) mode. This prevents any user interface shenanigans such as trying to display error windows on the server, and the storage of all TRIM users' caches in the one location, and other general server-mode goodness.
 
 <!--more-->
 
