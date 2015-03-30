@@ -4,9 +4,8 @@
 .site-header {
 	border-top: 5px solid $grey-color-dark;
 	border-bottom: 1px solid $grey-color-light;
-	min-height: 56px;
-	background-color:$background-color;
-	opacity:0.75;
+	min-height: 72px;
+	background-color:$grey-color-light;
 	padding-left:$spacing-unit;
 	padding-right:$spacing-unit;
 
@@ -15,8 +14,8 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 72px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -24,13 +23,18 @@
 
     &,
     &:visited {
-        color: black;
+        color: $grey-color-dark;
     }
+}
+
+.site-title .avatar {
+	height:72px;
+	min-width: $spacing-unit * 2;
 }
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 72px;
 
     .menu-icon {
         display: none;
