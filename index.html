@@ -1,30 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-    <link href="a/style.css" rel="stylesheet" />
-	<link rel="me" href="https://bitbucket.org/mattbayliss" />
-	<link rel="me" href="https://github.com/MattBayliss" />
-	
-    <title>Matt Bayliss</title>
-</head>
-<body>
-<div id="profiles">
-<h1>Matt Bayliss</h1>
-<h2>as seen on the internet</h2>
-<ul>
-  <li><a href="https://twitter.com/mattbayliss" rel="me">Twitter</a></li>
-  <li><a href="https://plus.google.com/+MattBayliss" rel="me">Google</a></li>
-  <li><a href="https://www.facebook.com/MattBayliss" rel="me">Facebook</a></li>
-</ul>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+				<div class="excerpt">
+					{{ post.excerpt | remove: '<img>' }}
+				</div>
+				<a class="more-link" href="{{ post.url | prepend: site.baseurl }}">more…</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 </div>
-<div id="hcard-Matt-Bayliss" class="vcard">
-  <img src="http://mattbayliss.com/i/avatar_800.png" alt="photo of " class="photo"/>
- <a class="url fn" href="http://mattbayliss.com/">Matt Bayliss</a>
- <div class="adr">
-  <span class="locality">Canberra</span>
-  <span class="country-name">Australia</span>
- </div>
-</div>
-</body>
-</html>

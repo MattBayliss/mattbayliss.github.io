@@ -1,0 +1,31 @@
+---
+layout: post
+title: Information Management and me
+date: 2009-10-20 09:35:11
+categories: information-management
+excerpt_separator: <!--more-->
+---
+
+Hi! I'm Matt Bayliss, I'm a solutions architect at iCognition, an Information Management company out of Canberra, Australia of around 20 people. I've been here for 3 years now, but I first came to information management around 10 years ago, and it was with some trepidation. My background was dabbling with scripting, and intranet web design and development for a government department, and with interests in gaming and illustration... Information management, well, just the terms didn't light my fire.
+
+<!--more-->
+
+My initial information management work was in Federal Government Departments, and dealing with the more sober area of Records Management, with all it's legislative requirements such as the Archive Act, disposal authorities, rentention schedules etc (don't worry, my eyes glaze over just typing it). I was exposed to important principles and strategies for dealing with large amounts of coporate records.
+
+But when it comes right down to it, managing your own information comes down to two quintessential things: Trusting the system, and finding stuff.
+
+### Trust it
+
+The first part of good information management is trusting your system. You want to know that when you save that file, you can get it back. Of course, while we trust our hard-drives, very few of us backup our information with any regularity or rigor. You might trust your C: Drive on your work computer more than a network drive, you might think it's more private, and safe. A network admin can easily access both, but generally only the network drive gets backed-up.
+
+One of cloud-computings' big hurdles could be "trust". I save my file to a server in another country... can I trust that that server will still be around next year? When that company is a behemoth like Amazon (and the Amazon S3 services) or Google (I do a lot of drafting in Google Docs), then trust is easier. Smaller operations seem a bit iffy.
+
+###Find it
+
+So much information, so much "stuff". Information is only useful if you can find it when you need it, or better yet, is presented to you in a non-annoying way. Categorise it? As two examples, Delicious and Flickr allow users to tag their information, making commonly themed stuff easier to find. Index it? I use Gmail, and while I'm semi-good and apply labels/tags to some emails, when I need to find something, I always head straight to the search bar, and it works a treat.
+
+When you start working within a managed information environment however, there's a lot more to consider. You want other people to find your stuff, and you want to find their stuff. And if people change each other's stuff, versioning would be nice so you can revert back to your latest changes, because those changes that other guy did were crap. You want security on your stuff. You want your accountant to have your receipts, but not for them to be publicly available.
+
+I find information management more and more interesting as the years have gone by. Now, with the explosion of web based applications and more information being created, and being accessible, than ever before, it's enough to keep a fellow in a job, and a blog.
+
+So, if information is up your alley, stick around. This blog will be my outlet for cool stuff I find, concepts that intrigue, and, well, whatever else you may see here.
