@@ -5,7 +5,6 @@
 	border-top: 5px solid $grey-color-dark;
 	border-bottom: 1px solid $grey-color-light;
 	min-height: 72px;
-	background-color:$grey-color-light;
 	padding-left:$spacing-unit;
 	padding-right:$spacing-unit;
 
@@ -14,13 +13,19 @@
 }
 
 .site-title {
-    font-size: 32px;
-    line-height: 72px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-		text-transform: lowercase;
+	font-size: 42px;
+	line-height: 72px;
+	letter-spacing: -1px;
+	margin-bottom: 0;
+	float: left;
+	text-transform: lowercase;
+	vertical-align:baseline;
+}
 
+.site-title a {
+	display:block;
+	width:auto;
+	float:left;
     &,
     &:visited {
         color: $grey-color-dark;
@@ -28,13 +33,14 @@
 }
 
 .site-title .avatar {
+  float:left;
 	height:72px;
-	min-width: $spacing-unit * 2;
+	padding-right:$spacing-unit / 2;
 }
 
 .site-nav {
     float: right;
-    line-height: 72px;
+    line-height: 90px;
 
     .menu-icon {
         display: none;
@@ -167,13 +173,19 @@
 }
 
 
+/**
+ * Wrapper
+ */
+.wrapper {
+	background-color:rgba(255,255,255,0.75);
+}
+
 
 /**
  * Page content
  */
 .page-content {
-	background-color:$background-color;
-	opacity: 0.97;
+	background-color:rgba(255,255,255,0.75);
 	padding: $spacing-unit;
 }
 
