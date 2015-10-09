@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning F# - Parsing XML to CSV
-date: 2015-10-16 15:33:01
+date: 2015-10-09 17:00:00
 categories: f#
 excerpt_separator: <!--more-->
 ---
