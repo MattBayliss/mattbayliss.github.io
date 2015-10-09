@@ -14,3 +14,5 @@ facebook_username: MattBayliss
 
 # Build settings
 markdown: kramdown
+
+highlighter: rouge
