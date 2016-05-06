@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing HP Records Manager web components on Windows 10
-date: 2016-05-06 10:39:00
+date: 2016-05-06 00:00:00
 categories: hprm, information-management
 excerpt_separator: <!--more-->
 ---
