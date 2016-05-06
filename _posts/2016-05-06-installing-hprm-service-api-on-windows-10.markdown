@@ -20,6 +20,7 @@ All you need to do is make a change in the registry to trick the HP RM installer
 I made a backup of that key, just to be safe, and you should too! (Right-click on InetStp and click *Export*).
 
 Then, change the value of MajorVersion from 10 to 9 (making sure you've selected *Decimal* instead of Hexidecimal).
+
 ![RegEdit screenshot of the MajorVersion setting](/images/160506_reg_InetStp_MajorVersion.png)
 
 Now simply run the Setup_HPE_RM_x64.exe as Administrator, and select the web components you want to install. It should sail on through with no IIS related errors.
