@@ -5,15 +5,14 @@ date: 2016-05-06 00:00:00
 categories: hprm, information-management
 excerpt_separator: <!--more-->
 ---
-I recently got a Microsoft Surface Pro 4 as my main development machine, and as such I wanted to install a *HPE* *RM* server,
-and also the Web Client and Service API. However, Windows 10 is not supported by *RM* 8.3, and so I received this message:
+I recently got a Microsoft Surface Pro 4 as my main development machine, and as such I wanted to install a <abbr title="Hewlett Packard Enterprise">HPE</abbr> <abbr title="Records Manager">RM</abbr> server, and also the Web Client and Service API. However, Windows 10 is not supported by RM 8.3, and so I received this message:
 ![Error message: HPE Records Manager Web Client x64 requires IIS7 to be installed on this computer](/images/160506_hprm_setup_error.png)
 
 I wasn't going to let that stop me! Here's what I did to get it working.
 
 <!--more-->
 
-**WARNING: Setting up *RM* 8.3 on Windows 10 is not supported by *HPE* (nor me by the way). That means you're on your own if something goes wrong. I'm doing this for development purposes only.**
+**WARNING: Setting up RM 8.3 on Windows 10 is not supported by *HPE* (nor me by the way). That means you're on your own if something goes wrong. I'm doing this for development purposes only.**
 
 All you need to do is make a change in the registry to trick the HP RM installer into thinking you have a valid IIS version. -Please note that you modify the registry at your own risk. Do be careful-. Open RegEdit and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InetStp
 ![RegEdit screenshot of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InetStp](/images/160506_reg_InetStp.png)
@@ -32,8 +31,3 @@ Happy Records Managing!
 Matt
 
 **REMINDER: The HPE RM 8.3 web components are not supported on Windows 10, and you modify the registry at your own risk.**
- 
-:
-*[HP]: Hewlett Packard
-*[HPE]: Hewlett Packard Enterprise
-*[RM]: Records Manager
