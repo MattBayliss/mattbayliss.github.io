@@ -14,7 +14,7 @@ I wasn't going to let that stop me! Here's what I did to get it working.
 
 **WARNING: Setting up RM 8.3 on Windows 10 is not supported by *HPE* (nor me by the way). That means you're on your own if something goes wrong. I'm doing this for development purposes only.**
 
-All you need to do is make a change in the registry to trick the HP RM installer into thinking you have a valid IIS version. -Please note that you modify the registry at your own risk. Do be careful-. Open RegEdit and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InetStp
+All you need to do is make a change in the registry to trick the HP RM installer into thinking you have a valid IIS version. _Please note that you modify the registry at your own risk. Do be careful_. Open RegEdit and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InetStp
 ![RegEdit screenshot of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InetStp](/images/160506_reg_InetStp.png)
 
 I made a backup of that key, just to be safe, and you should too! (Right-click on InetStp and click *Export*).
