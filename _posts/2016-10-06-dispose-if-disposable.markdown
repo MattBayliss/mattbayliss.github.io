@@ -1,9 +1,8 @@
 ---
 layout: post
-title: DisposeIfDisposable
+title: DisposeIfDisposable()
 date: 2016-10-06 10:40:00
 categories: c#
-excerpt_separator: <!--more-->
 ---
 I work primarily with <abbr title="Hewlett Packard Enterprise">HPE</abbr> <abbr title="Records Manager">RM</abbr>, and most of the the objects within its SDK needed to be Disposed (otherwise horrible memory related errors), prior to version 8.2 of RM.
 
