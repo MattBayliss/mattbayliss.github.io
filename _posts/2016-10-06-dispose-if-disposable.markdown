@@ -3,6 +3,7 @@ layout: post
 title: DisposeIfDisposable()
 date: 2016-10-06 10:40:00
 categories: c#
+excerpt_separator: <!--more-->
 ---
 I work primarily with <abbr title="Hewlett Packard Enterprise">HPE</abbr> <abbr title="Records Manager">RM</abbr>, and most of the the objects within its SDK needed to be Disposed (otherwise horrible memory related errors), prior to version 8.2 of RM.
 
@@ -36,15 +37,17 @@ This all works because Record implements IDisposable. However, HPE RM 8.2 came a
 
 So, to make cross-version compatible code, I made the object extension, *DisposeIfDisposable*:
 
+<!--more-->
+
 	public static void DisposeIfDisposable(this object obj)
 	{
-		if((obj != null) && (obj is IDisposable))
+		if(obj is IDisposable)
 		{
 			((IDisposable)obj).Dispose();
 		}
 	}
 	
-This extension will add a new `DisposeIfDisposable()` method to every object, and if that object is not null, and implements IDisposable, it will be Disposed.	
+This extension will add a new `DisposeIfDisposable()` method to every object, and if that object is not null (`null is IDisposable` returns false), and implements IDisposable, it will be Disposed.	
 
 I had to give up using `using`, which was sad. My cross-version-compatible code now looks like:
 
