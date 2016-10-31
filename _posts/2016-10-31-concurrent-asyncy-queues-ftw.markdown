@@ -133,7 +133,7 @@ The function `private async Task ProcessQueue(CancellationToken ct)` assigns eac
 
 	tasks[t] = _responseTasks.GetOrAdd(request.Id, _renderFunc(request, ct));
 	
-What this means that the key, request.Id doesn't exist in `_responseTasks` then start the `renderFunc` for that request. However if that request has already been assigned to the dictionary, use the existing `renderFunc` already added to the `_responseTasks` dictionary. Neat, huh?
+What this means is that if the key, request.Id doesn't exist in `_responseTasks` then start the `renderFunc` for that request. However if that request has already been assigned to the dictionary, use the existing `renderFunc` already added to the `_responseTasks` dictionary. Neat, huh?
 
 ProcessQueue completes when all queued requests are assigned to tasks in the `_responseTasks` dictionary (not when those tasks are completed). Requests are removed from the _requestQueue using the TryDequeue method, which tries to get a Request from the queue in a thread-safe way. If it fails (returns false), it waits 100ms and checks the queue again.
 
