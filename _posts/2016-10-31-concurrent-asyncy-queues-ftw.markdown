@@ -39,6 +39,7 @@ So, let's design our Renderer class. It's only going to have a constructor and t
 The constructor accepts two arguments:
 
 `int threadCount`: The number of threads on which to process Requests
+
 `Func<Request, CancellationToken, Task<Response>> renderFunc`: A delegate function that does the Rendering. It accepts a `Request` object (defined below), a `CancellationToken`, used to abort the Render, and returns a `Response` object (defined below).
 
 This allows us to reuse our Renderer class for any kind of multithreaded queue processing. We just pass in a different renderFunc for whatever purpose.
