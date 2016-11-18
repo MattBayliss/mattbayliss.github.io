@@ -78,4 +78,4 @@ Maybe.
 Matt.
 
 [rmw]: http://www.rmworkspace.com.au/ "RM Workspace"
-[ghlink]: https://github.com/MattBayliss/EncloseTesterRM "GitHub repository MattBayliss/EncloseTesterRM"
+[ghc]: https://github.com/MattBayliss/EncloseTesterRM "GitHub repository MattBayliss/EncloseTesterRM"
