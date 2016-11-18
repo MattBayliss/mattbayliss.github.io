@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Property Order for Enclosed Records in HPE Records Manager
-date: 2016-10-31 11:26:00
+date: 2016-11-18 11:26:00
 categories: trimsdk
 excerpt_separator: <!--more-->
 ---
