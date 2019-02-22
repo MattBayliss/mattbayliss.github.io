@@ -80,17 +80,17 @@ With all that repeated initialise, try, catch, finally, I thought of a cleaner w
 	
 I'll show an example with some proper code below, but first some details. This DisposeAfterFunc takes 3 parameters:
 
-Func<S> initObjectFunc
+Func<<S>> initObjectFunc
 ----------------------
 
-This is the function that provides the initial value of type S for our object. I'm passing it as a Func<S> instead of just S itself, so that the initialisation is covered by the try / catch. 
+This is the function that provides the initial value of type S for our object. I'm passing it as a Func<<S>> instead of just S itself, so that the initialisation is covered by the try / catch. 
 
 Func<S, T> usingFunc
 --------------------
 
 This anonymous function takes the value returned by initObjectFunc, does whatever needs to be done, and returns a value of type T. 
 
-Action<Exception> errorHandler
+Action<<Exception>> errorHandler
 ------------------------------
 
 This is an optional anonymous error handler Action. If this parameter is null, the Exception is thrown to the calling function. If the errorHandler isn't null, but doesn't stop execution, the function would return a default(T) - which is always null with the 3rd party objects I use.
